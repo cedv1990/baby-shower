@@ -1,21 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6beec50.chunk.css",
-    "main.js": "/static/js/main.03bc4c46.chunk.js",
-    "main.js.map": "/static/js/main.03bc4c46.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.dd44e947.js",
-    "runtime-main.js.map": "/static/js/runtime-main.dd44e947.js.map",
-    "static/js/2.f697b564.chunk.js": "/static/js/2.f697b564.chunk.js",
-    "static/js/2.f697b564.chunk.js.map": "/static/js/2.f697b564.chunk.js.map",
+    "main.css": "/static/css/main.5e14edbf.css",
+    "main.js": "/static/js/main.17da0a8f.js",
+    "static/media/bg.jpeg": "/static/media/bg.5f3b149ff430f688cbce.jpeg",
+    "static/media/Montserrat-Light.woff": "/static/media/Montserrat-Light.ad3f4d41d5d261331e11.woff",
+    "static/media/flowers-single-top.png": "/static/media/flowers-single-top.d6fa24f16e4cb4f9f047.png",
+    "static/media/flowers-single-bottom.png": "/static/media/flowers-single-bottom.b837435a4a9fff937239.png",
+    "static/media/Safina-Script.woff": "/static/media/Safina-Script.60d96e9c68b1599c9449.woff",
+    "static/media/load.webp": "/static/media/load.077c7a73b346a18f4c27.webp",
     "index.html": "/index.html",
-    "static/css/main.a6beec50.chunk.css.map": "/static/css/main.a6beec50.chunk.css.map",
-    "static/js/2.f697b564.chunk.js.LICENSE.txt": "/static/js/2.f697b564.chunk.js.LICENSE.txt",
-    "static/media/styles.scss": "/static/media/load.077c7a73.webp"
+    "main.5e14edbf.css.map": "/static/css/main.5e14edbf.css.map",
+    "main.17da0a8f.js.map": "/static/js/main.17da0a8f.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.dd44e947.js",
-    "static/js/2.f697b564.chunk.js",
-    "static/css/main.a6beec50.chunk.css",
-    "static/js/main.03bc4c46.chunk.js"
+    "static/css/main.5e14edbf.css",
+    "static/js/main.17da0a8f.js"
   ]
 }
