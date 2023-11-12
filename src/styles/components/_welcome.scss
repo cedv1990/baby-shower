@@ -1,0 +1,70 @@
+.container {
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 20px;
+    margin: 100px 0;
+
+    div {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .notice {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .little-words {
+        margin-bottom: 40px;
+        max-width: 60vw;
+        font-size: 1.5rem;
+    }
+
+    .couple-names {
+        font-family: Safina, Arial, sans-serif;
+        font-size: 12rem;
+        line-height: 8rem;
+    }
+
+    .words {
+        font-size: 1.5rem;
+        max-width: 60vw;
+        font-style: italic;
+    }
+
+    .date {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: darken($color: #FFFFFF, $amount: 20);
+
+        div {
+            padding: 0 10px;
+        }
+
+        .cute {
+            font-family: Safina, Arial, sans-serif;
+            font-size: 3rem;
+        }
+
+        .hour {
+            border-left: 1px solid darken($color: #FFFFFF, $amount: 40);
+            border-right: 1px solid darken($color: #FFFFFF, $amount: 40);
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-size: 2.5rem;
+                line-height: 2rem;
+            }
+
+            span {
+                font-size: .8rem;
+            }
+        }
+    }
+}

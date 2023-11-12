@@ -1,0 +1,21 @@
+.location {
+    cursor: pointer;
+    color: darken($color: white, $amount: 20);
+    text-align: center;
+    margin: 10px 0;
+
+    i {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    &:hover {
+        color: white;
+        background-color: rgba(113, 113, 113, 0.2);
+    }
+
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(113, 113, 113, 0.1);
+    text-decoration: underline;
+}

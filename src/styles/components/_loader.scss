@@ -1,0 +1,18 @@
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    background-image: url(../../assets/load.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 50% auto;
+    background-color: rgb(247, 189, 251);
+
+    &.no-pointer {
+        pointer-events: none;
+    }
+}

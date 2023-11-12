@@ -1,0 +1,87 @@
+@font-face {
+    font-family: Montserrat;
+    /*src: url(myriad-web-pro.ttf);*/
+
+    src: url('../fonts/Montserrat-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: Safina;
+    /*src: url(myriad-web-pro.ttf);*/
+
+    src: url('../fonts/Safina-Script.woff') format('woff');
+}
+
+* {
+    font-family: Montserrat, Arial, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    font-size: 14px;
+    overflow: hidden;
+
+    background-image: linear-gradient(to bottom, rgba(113, 113, 113, 0.6) 0%, rgba(60, 60, 60, 0.7) 100%), url('../../assets/bg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    @media (max-width: 520px) {
+        font-size: 12px;
+    }
+}
+
+#root {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+button {
+    border: none;
+    padding: 7px 10px 7px 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 2px;
+    background-color: #6d498f;
+
+    transition: all .3s ease;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        color: darken($color: white, $amount: 10);
+        background-color: darken($color: #6d498f, $amount: 5);
+    }
+
+    &:disabled {
+        color: darken($color: white, $amount: 20);
+        background-color: darken($color: #CCCCCC, $amount: 40);
+    }
+}
+
+input {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.large {
+    font-size: 1.2rem;
+    padding: 12px 14px;
+    border-radius: 4px;
+
+    * {
+        font-size: 1.2rem;
+        padding: 12px 14px;
+        border-radius: 4px;
+    }
+}

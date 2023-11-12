@@ -1,0 +1,184 @@
+$goes: rgb(119, 194, 255);
+$mix: rgb(233, 181, 86);
+$not-goes: rgb(255, 119, 119);
+
+.admin__ {
+    &guests {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: white;
+
+        &-filter {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        &-loading {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            font-family: Safina;
+        }
+
+        &-copied {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background-color: rgba(0, 128, 0, 0.6);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        &-title {
+            font-size: 5rem;
+            padding: 15px;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid silver;
+            width: calc(100% - 100px);
+            text-align: center;
+            font-family: Safina;
+        }
+
+        &-detail {
+            width: calc(100% - 100px);
+            padding: 0 15px;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            strong {
+                font-weight: bolder !important;
+            }
+            input {
+                width: 100%;
+            }
+
+            .input {
+                width: 30%;
+            }
+
+            @media (max-width: 850px) {
+                flex-flow: row wrap !important;
+                .input {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        &-copy {
+            width: calc(100% - 100px);
+            padding: 0 15px;
+            margin-bottom: 15px;
+
+            textarea {
+                position: fixed;
+                top: -1000px;
+            }
+
+            .copied {
+                background-color: #36aa00;
+            }
+        }
+
+        &-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 50px;
+            padding-top: 0;
+            width: 100%;
+
+            &-row {
+                margin: 5px;
+                padding: 10px;
+                width: calc(50% - 20px);
+
+                &.error {
+                    background-color: transparentize($color: #CCCCCC, $amount: 0.6);
+                }
+
+                &.nobody {
+                    background-color: transparentize($color: $not-goes, $amount: 0.6);
+                    &:hover {
+                        background-color: transparentize($color: $not-goes, $amount: 0.5);
+                    }
+                }
+
+                &.mix {
+                    background-color: transparentize($color: $mix, $amount: 0.6);
+                    &:hover {
+                        background-color: transparentize($color: $mix, $amount: 0.5);
+                    }
+                }
+
+                &.all {
+                    background-color: transparentize($color: $goes, $amount: 0.6);
+                    &:hover {
+                        background-color: transparentize($color: $goes, $amount: 0.5);
+                    }
+                }
+
+                border-radius: 5px;
+
+                &:not(.error) {
+                    cursor: pointer;
+                }
+
+                h1 {
+                    font-weight: bolder;
+                    border-bottom: 1px solid white;
+                    margin-bottom: 10px;
+                }
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+
+                    li {
+                        position: relative;
+                    }
+
+                    li.yes::before {
+                        content: '😊';
+                    }
+
+                    li.no::before {
+                        content: '🥺';
+                    }
+
+                    li.bus::after {
+                        content: '🚌';
+                        position: absolute;
+                        right: 0
+                    }
+                }
+
+                @media (max-width: 850px) {
+                    width: 100%;
+                }
+
+                @media (min-width: 1050px) {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
