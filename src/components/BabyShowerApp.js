@@ -8,7 +8,7 @@ import { WelcomeScreen } from './WelcomeScreen';
 import { AdminScreen } from './AdminScreen';
 import { extractQueryString } from '../helpers/uri';
 
-export const WeddingApp = () => {
+export const BabyShowerApp = () => {
     const isAdmin = extractQueryString('admin') === 'true';
 
     const guestId = extractQueryString('id');

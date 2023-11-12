@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setShowForm } from '../actions/ui';
 import { ConfirmButton } from './confirm/ConfirmButton';
 import { Location } from './Location';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBaby, faEnvelopesBulk, faGift } from '@fortawesome/free-solid-svg-icons';
 
 export const WelcomeScreen = () => {
     const dispatch = useDispatch();
@@ -51,8 +53,8 @@ export const WelcomeScreen = () => {
                 Llegaré en poco tiempo, mis papitos y yo queremos compartir contigo esta alegría.
             </div>
             <div className="little-words">
-                Cover: Pañales Winny<br />
-                Presente: Obsequio o lluvia de sobres
+                Cover: Pañales Winny <FontAwesomeIcon icon={faBaby} /><br />
+                Presente: <FontAwesomeIcon icon={faGift} /> Obsequio o lluvia de sobres <FontAwesomeIcon icon={faEnvelopesBulk} />
             </div>
             <div className="date">
                 <div className="cute">Sábado</div>
